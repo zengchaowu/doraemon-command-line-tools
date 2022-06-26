@@ -6,6 +6,7 @@
   "bin": {
     "doraemon": "bin/doraemon.js"
   },
+  "type": "module",
   "dependencies": {
     "chalk": "^5.0.1",
     "commander": "^9.3.0",

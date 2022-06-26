@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { Command } = require("commander");
+import { Command } from "commander";
 const program = new Command();
 
 program.name("doraemon");
@@ -10,7 +10,9 @@ program
   .description("add module 2 project")
   .argument("<name>", "name")
   .action((name) => {
-    require(`../lib/nuxt-${name}.js`).add();
+    import(`../lib/nuxt-${name}.js`).then((result) => {
+      result.default.add();
+    });
   });
 
 program.parse();
