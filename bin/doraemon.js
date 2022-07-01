@@ -10,7 +10,7 @@ program
   .description("add module 2 project")
   .argument("<name>", "name")
   .action((name) => {
-    import(`../lib/nuxt-${name}.js`).then((result) => {
+    import(`../lib/nuxt-${name}/index.js`).then((result) => {
       result.default.add();
     });
   });
