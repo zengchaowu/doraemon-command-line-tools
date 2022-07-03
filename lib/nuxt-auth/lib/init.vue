@@ -7,20 +7,17 @@
 
 <script>
 import useAuthStore from "@/pinia/auth";
+import useApplicationStore from "@/pinia/application";
 export default {
   init: true,
   layout: "empty",
   mounted() {
-    console.log("init");
     const authStore = useAuthStore();
-    if (authStore.isReady === true) {
-      const from = localStorage.getItem("redirect");
-      this.$router.push(from ?? "/");
-    }
     authStore.load();
-    authStore.isReady = true;
-    const from = localStorage.getItem("redirect");
-    this.$router.push(from ?? "/");
+    const applicationStore = useApplicationStore();
+    applicationStore.isReady = true;
+    const redirect = applicationStore.redirect;
+    this.$router.push(redirect ?? "/");
   },
 };
 </script>
