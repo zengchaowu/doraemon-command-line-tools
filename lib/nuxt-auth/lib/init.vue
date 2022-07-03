@@ -17,6 +17,7 @@ export default {
     const applicationStore = useApplicationStore();
     applicationStore.isReady = true;
     const redirect = applicationStore.redirect;
+    applicationStore.redirect = undefined;
     this.$router.push(redirect ?? "/");
   },
 };
