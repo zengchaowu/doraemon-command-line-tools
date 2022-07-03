@@ -11,7 +11,7 @@ import useApplicationStore from "@/pinia/application";
 export default {
   init: true,
   layout: "empty",
-  mounted() {
+  async mounted() {
     const authStore = useAuthStore();
     authStore.load();
     const applicationStore = useApplicationStore();
