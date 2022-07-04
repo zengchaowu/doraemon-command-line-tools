@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@doraemon-module/nuxt-functions@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@doraemon-module/nuxt-functions/-/nuxt-functions-1.0.6.tgz#9715bc06789acfa54733dd5d44961a3ad087a669"
-  integrity sha512-newM4UpkBAGnD59NZI29qBhdUI0L554Hf9Rwv2iYz5cmh4fndA+jC9AM3FSKwSVWK6rgVf5Di0e84qUUu5Lyjw==
+"@doraemon-module/nuxt-functions@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@doraemon-module/nuxt-functions/-/nuxt-functions-1.0.7.tgz#8498f646f91c59cdbbc5b3c13208a1c923f7ae1e"
+  integrity sha512-vHzKs4Qaxziqr5ljf2W4RgVuAZnPCtVHtGtZRsBdKQXqhiR2rWQukqVrp3z4dq1HLxaa/TjNpRR/grwmFzsiVQ==
   dependencies:
     lodash.isnil "^4.0.0"
     mkdirp "^1.0.4"
