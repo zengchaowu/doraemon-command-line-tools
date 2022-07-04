@@ -6,6 +6,7 @@
 import useAuthStore from "@/pinia/auth";
 import useApplicationStore from "@/pinia/application";
 export default {
+  name: "AccountSinginPage",
   layout: "account",
   auth: false,
   methods: {

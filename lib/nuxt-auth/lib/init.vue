@@ -9,6 +9,7 @@
 import useAuthStore from "@/pinia/auth";
 import useApplicationStore from "@/pinia/application";
 export default {
+  name: "InitPage",
   init: true,
   layout: "empty",
   async mounted() {
