@@ -10,11 +10,10 @@ export default {
   layout: "account",
   auth: false,
   methods: {
-    async onSubmit() {
+    onSubmit() {
       try {
         const authStore = useAuthStore();
         authStore.loggedIn = true;
-
         const applicationStore = useApplicationStore();
         const redirect = applicationStore.redirect;
         applicationStore.redirect = undefined;
