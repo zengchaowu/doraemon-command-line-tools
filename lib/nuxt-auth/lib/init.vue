@@ -12,7 +12,7 @@ export default {
   name: "InitPage",
   init: true,
   layout: "empty",
-  async mounted() {
+  mounted() {
     const authStore = useAuthStore();
     authStore.load();
     const applicationStore = useApplicationStore();
