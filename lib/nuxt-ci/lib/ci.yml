@@ -45,7 +45,7 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
-      - name: Run linter 👀
+      - name: Run generate 👀
         run: yarn generate
 
       - name: Tencent CloudBase Github Action
@@ -53,5 +53,5 @@ jobs:
         with:
           secretId: AKIDiGZcPwCBsIRKwHMAgvsa1A3g27vaz6wV
           secretKey: KNDn64qNfgRv84j8G8j48wUlgPs40f4C
-          envId: www-0gzyr6ikbad0af1f
+          envId: www-5g1vg5ya308173c0
           staticSrcPath: dist
