@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [16]
 
     steps:
       - name: Checkout 🛎
@@ -46,14 +46,12 @@ jobs:
         run: yarn
 
       - name: Run linter 👀
-        run: yarn lint
+        run: yarn generate
 
-      - name: Run tests 🧪
-        run: yarn test
-      
       - name: Tencent CloudBase Github Action
-        uses: TencentCloudBase/cloudbase-action@v2
+        uses: TencentCloudBase/cloudbase-action@v1.1.1
         with:
-          secretId: AKIDUotkHX9EhU0GG1ou2doskOrJYbN1tUnp
-          secretKey: teKslOkobGBqB6Tb3AhAPdbO3pHURIEx
-          envId: zengchaowu-6gvltij9864860b7
+          secretId: AKIDiGZcPwCBsIRKwHMAgvsa1A3g27vaz6wV
+          secretKey: KNDn64qNfgRv84j8G8j48wUlgPs40f4C
+          envId: www-0gzyr6ikbad0af1f
+          staticSrcPath: dist
