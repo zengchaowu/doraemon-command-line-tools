@@ -23,17 +23,19 @@ export default {
       this.callback && files && files.length > 0 && this.callback(files);
       this.$refs.input.value = "";
     },
-    shouldPickFile(callback) {
+    shouldPickFile(callback, accept = undefined) {
       this.$refs.input.type = "file";
       this.$refs.input.multiple = false;
       this.$refs.input.webkitdirectory = false;
+      this.$refs.input.accept = accept;
       this.$refs.input.click();
       this.callback = callback;
     },
-    shouldPickFiles(callback) {
+    shouldPickFiles(callback, accept = undefined) {
       this.$refs.input.type = "file";
       this.$refs.input.multiple = true;
       this.$refs.input.webkitdirectory = false;
+      this.$refs.input.accept = accept;
       this.$refs.input.click();
       this.callback = callback;
     },
